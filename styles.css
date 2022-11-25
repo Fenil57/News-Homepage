@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  padding: 1.875rem 1rem 4rem;
+  position: relative;
+}
+
+header,
+main,
+aside,
+footer {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+
+.nav__logo {
+  width: 2.5rem;
+  height: 1.8rem;
+}
+
+.nav__links {
+  display: none;
+}
+
+.nav__link {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  color: var(--dark-grayish-blue);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nav__link__list:hover,
+.flex__list__info--title:hover {
+  color: var(--soft-red);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid__hero {
+  margin-bottom: 4rem;
+}
+
+.grid__hero__picture {
+  margin-bottom: 1.5rem;
+}
+
+.hero__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flex--title {
+  color: var(--very-dark-blue);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.flex--about {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.875rem;
+  font-size: 1rem;
+}
+
+.grid__hero img {
+  object-fit: cover;
+}
+
+.grid__hero--btn {
+  text-decoration: none;
+  color: var(--off-white);
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  background-color: var(--soft-red);
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.grid__hero--btn:hover {
+  background-color: var(--very-dark-blue);
+}
+
+.sidebar {
+  background-color: var(--very-dark-blue);
+  padding: 1rem;
+  margin-bottom: 3.75rem;
+}
+
+.sidebar__heading {
+  color: var(--soft-orange);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sidebar--title {
+  color: var(--off-white);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sidebar--title:hover {
+  color: var(--soft-orange);
+}
+
+.sidebar--sub {
+  color: var(--off-white);
+  opacity: 0.7;
+}
+
+.sidebar--sub:not(:last-child) {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  margin-bottom: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.flex__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.flex__list--1,
+.flex__list--2,
+.flex__list--3 {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.flex__list__img {
+  width: 6.25rem;
+  height: 8rem;
+  transition: all 0.2s;
+}
+
+.flex__list__img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.flex__list__img img {
+  object-fit: cover;
+}
+
+.flex__list__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.flex__list__info--span {
+  font-size: 1.5rem;
+  color: var(--dark-grayish-blue);
+  opacity: 0.5;
+  font-weight: 800;
+}
+
+.flex__list__info--title {
+  color: var(--very-dark-blue);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all.2s;
+}
+
+.flex__list__info--sub-title {
+  color: var(--dark-grayish-blue);
+  line-height: 1.5;
+}
+
+.mobile__menu {
+  display: none;
+  background-color: var(--off-white);
+  width: 70vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mobile__menu__close {
+  float: right;
+  margin-top: 1.875rem;
+  margin-right: 1.5rem;
+}
+
+.mobile__menu__nav {
+  margin-left: 1.5rem;
+  margin-top: 9rem;
+}
+
+.mobile__menu__nav__list {
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+}
+
+.mobile__menu__nav__list__link:link,
+.mobile__menu__nav__list__link:visited {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    padding: 6rem 10rem 4rem;
+  }
+
+  .nav {
+    margin-bottom: 4rem;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__links {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header,
+  main,
+  aside,
+  footer {
+    padding-inline: 7.5rem;
+  }
+
+  .nav {
+    margin-top: 4.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .grid__hero {
+    margin-bottom: 0;
+  }
+
+  .grid__hero__picture {
+    margin-bottom: 1.875rem;
+  }
+
+  .sidebar {
+    margin-bottom: 0;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  .flex--title {
+    font-size: 3.5rem;
+    flex: 50%;
+  }
+
+  .flex--about {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero__flex {
+    flex-direction: row;
+    gap: 1.875rem;
+  }
+
+  .hero__flex__info {
+    flex: 50%;
+  }
+
+  .flex__list {
+    flex-direction: row;
+  }
+
+  .flex__list__info--span {
+    font-size: 2rem;
+  }
+}

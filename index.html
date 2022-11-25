@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>News Homepage</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="img/logo.svg" alt="logo" class="nav__logo" />
+        <div class="nav__menu">
+          <img src="img/icon-menu.svg" alt="menu" />
+        </div>
+        <div class="nav__links">
+          <ul class="nav__link">
+            <li class="nav__link__list">Home</li>
+            <li class="nav__link__list">New</li>
+            <li class="nav__link__list">Popular</li>
+            <li class="nav__link__list">Trending</li>
+            <li class="nav__link__list">Categories</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <div class="grid__hero">
+        <picture class="grid__hero__picture">
+          <source
+            media="(max-width:650px)"
+            srcset="img/image-web-3-mobile.jpg"
+          />
+          <img
+            src="img/image-web-3-desktop.jpg"
+            alt="puzzles"
+            style="width: auto"
+          />
+        </picture>
+        <div class="hero__flex">
+          <h1 class="flex--title">The Bright Future of Web 3.0?</h1>
+          <div class="hero__flex__info">
+            <p class="flex--about">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#" class="grid__hero--btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <h2 class="sidebar__heading">New</h2>
+
+        <h3 class="sidebar--title">Hydrogen VS Electric Cars</h3>
+        <p class="sidebar--sub">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+
+        <h3 class="sidebar--title">The Downsides of AI Artistry</h3>
+        <p class="sidebar--sub">
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+
+        <h3 class="sidebar--title">Is VC Funding Drying Up?</h3>
+        <p class="sidebar--sub">
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </aside>
+    </main>
+
+    <footer class="flex__list">
+      <div class="flex__list--1">
+        <div class="flex__list__img">
+          <img src="img/image-retro-pcs.jpg" alt="retro pc" />
+        </div>
+        <div class="flex__list__info">
+          <span class="flex__list__info--span">01</span>
+          <h3 class="flex__list__info--title">Reviving Retro PCs</h3>
+          <p class="flex__list__info--sub-title">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="flex__list--2">
+        <div class="flex__list__img">
+          <img src="img/image-top-laptops.jpg" alt="laptops" />
+        </div>
+        <div class="flex__list__info">
+          <span class="flex__list__info--span">02</span>
+          <h3 class="flex__list__info--title">Top 10 Laptops of 2022</h3>
+          <p class="flex__list__info--sub-title">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex__list--3">
+        <div class="flex__list__img">
+          <img src="img/image-gaming-growth.jpg" alt="gaming console" />
+        </div>
+        <div class="flex__list__info">
+          <span class="flex__list__info--span">03</span>
+          <h3 class="flex__list__info--title">The Growth of Gaming</h3>
+          <p class="flex__list__info--sub-title">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile__menu">
+      <div class="mobile__menu__close">
+        <img src="img/icon-menu-close.svg" alt="close" />
+      </div>
+      <nav class="mobile__menu__nav">
+        <ul class="mobile__menu__nav__list">
+          <li><a href="#" class="mobile__menu__nav__list__link">Home</a></li>
+          <li><a href="#" class="mobile__menu__nav__list__link">New</a></li>
+          <li><a href="#" class="mobile__menu__nav__list__link">Popular</a></li>
+          <li>
+            <a href="#" class="mobile__menu__nav__list__link">Trending</a>
+          </li>
+          <li>
+            <a href="#" class="mobile__menu__nav__list__link">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
